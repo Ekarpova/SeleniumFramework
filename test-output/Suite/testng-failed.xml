@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="NavigatingHomePage(failed)">
+    <classes>
+      <class name="com.ekaterina.HomePageTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="buttonClick"/>
+          <include name="homePageNavigation"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.ekaterina.HomePageTest -->
+    </classes>
+  </test> <!-- NavigatingHomePage(failed) -->
+  <test thread-count="5" name="Validating(failed)">
+    <classes>
+      <class name="com.ekaterina.ValidateTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="validate"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.ekaterina.ValidateTest -->
+    </classes>
+  </test> <!-- Validating(failed) -->
+</suite> <!-- Failed suite [Suite] -->

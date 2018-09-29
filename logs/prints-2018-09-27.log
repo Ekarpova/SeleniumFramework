@@ -1,0 +1,7 @@
+23:57:33.911 [main] INFO  com.ekaterina.Basic - the browser is 
+23:57:33.915 [main] INFO  com.ekaterina.Basic - Connected to MySQL
+23:57:34.224 [main] INFO  com.ekaterina.MortgageCalculatorTest - Bankrate.com/app
+23:58:49.162 [main] INFO  com.ekaterina.Basic - chrome 
+23:58:49.165 [main] INFO  com.ekaterina.HomePageTest - Initialiazation
+23:58:49.372 [main] INFO  com.ekaterina.MortgageCalculatorTest - Mortgage Calculator
+23:58:51.906 [main] INFO  com.ekaterina.MortgageCalculatorTest - Home Loan Refinancing Calculator: Current Mortgage Refinance Rates

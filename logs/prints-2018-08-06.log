@@ -1,0 +1,7 @@
+22:17:08.847 [main] ERROR com.ekaterina.ValidateTest - driver failed initialization
+22:17:34.608 [main] INFO  com.ekaterina.HomePageTest - Initialiazation
+22:17:34.676 [main] INFO  com.ekaterina.HomePageTest - You are on the right page
+22:17:34.867 [main] INFO  com.ekaterina.HomePageTest - You are on the right page
+22:18:01.493 [main] ERROR com.ekaterina.ValidateTest - driver failed initialization
+20:14:11.879 [main] INFO  com.ekaterina.HomePageTest - Initialiazation
+20:14:11.976 [main] INFO  com.ekaterina.HomePageTest - You are on the right page

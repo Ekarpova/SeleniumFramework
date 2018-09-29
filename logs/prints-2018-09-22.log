@@ -1,0 +1,6 @@
+00:05:02.412 [main] INFO  com.ekaterina.MortgageCalculatorTest - Bankrate.com - Compare mortgage, refinance, insurance, CD rates
+00:05:54.292 [main] INFO  com.ekaterina.MortgageCalculatorTest - Sign in for Your Free Credit Report, Score & Access Credit Tools
+00:16:34.726 [main] INFO  com.ekaterina.Basic - chrome 
+00:16:34.728 [main] INFO  com.ekaterina.BankRateTest - Initialiazation
+00:16:34.779 [main] INFO  com.ekaterina.MortgageCalculatorTest - Mortgage Calculator
+00:16:38.104 [main] INFO  com.ekaterina.MortgageCalculatorTest - Home Loan Refinancing Calculator: Current Mortgage Refinance Rates

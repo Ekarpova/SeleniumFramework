@@ -48,6 +48,7 @@ public class HomePageTest extends BankRateTest
 	public void openBrowser() throws IOException 
 	{driver = driverInitialization();
 	log.info("Initialiazation");
+	
 	}
 	
 	
@@ -55,6 +56,7 @@ public class HomePageTest extends BankRateTest
 	@Test
 	public void enterLogIn() throws IOException, SQLException {
 		navigToBankRate();
+		
 		LogInPageObjs logIn = new LogInPageObjs(driver);
 		FramesFinder.windowsNavigation(driver, logIn.LogInButton);
 		 Basic b = new Basic();

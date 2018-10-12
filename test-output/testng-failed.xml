@@ -5,6 +5,7 @@
     <classes>
       <class name="com.ekaterina.HomePageTest">
         <methods>
+          <include name="navigatetocalc"/>
           <include name="navigToBankRate"/>
           <include name="enterLogIn"/>
           <include name="openBrowser"/>

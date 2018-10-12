@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.nio.file.Files;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -55,16 +56,30 @@ public class Basic
 	
 	
 	
-
+	InputStream inputStream;
 	
 	public WebDriver driverInitialization() throws IOException{
 	
-		Properties prop = new Properties();
-		FileInputStream fis = new FileInputStream("C:\\Users\\ekate\\SeleniumFramework\\src\\test\\java\\com\\ekaterina\\DataF.properties");
+		//Properties prop = new Properties();
+		//FileInputStream fis = new FileInputStream("C:\\Users\\ekate\\SeleniumFramework\\src\\test\\java\\com\\ekaterina\\DataF.properties");
+		//prop.load(fis);
+		
+		try {
+			Properties prop = new Properties();
+			String propFileName = "config.properties";
+ 
+			inputStream = getClass().getClassLoader().getResourceAsStream(propFileName);
+ 
+			if (inputStream != null) {
+				prop.load(inputStream);
+			} else {
+				throw new FileNotFoundException("property file '" + propFileName + "' not found in the classpath");
+			}
 		
 		
 		
-		prop.load(fis);
+		
+		
 		String theBrowser = prop.getProperty("browser");
 		if(theBrowser.contains("chrome")) {driver = new ChromeDriver();}
 		else if(theBrowser.contains("firefox")) {driver = new FirefoxDriver();}
@@ -81,13 +96,22 @@ public class Basic
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		log.info(theBrowser);
-		return driver;
-				
+		
+		
+		
+		return driver; }
+		catch (Exception e) {
+			System.out.println("Exception: " + e);
+		} finally {
+			inputStream.close();}
+		return driver ;
+		
 	}
 	
-	public void takeTestScreenshot(String result) throws IOException {
+	
+	/*public void takeTestScreenshot(String result) throws IOException {
 	File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-	FileUtils.copyFile(src, new File("C://Users//ekate//Desktop//Statements//"+ result +"sh.png"));}
+	FileUtils.copyFile(src, new File("C://Users//ekate//Desktop//Statements//"+ result +"sh.png"));}*/
 	
 	
 	

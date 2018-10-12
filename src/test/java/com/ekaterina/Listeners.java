@@ -14,13 +14,13 @@ public class Listeners implements ITestListener {
 	
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
-		//System.out.println(" Test failed" + result.getName());
-		try {
+		//log.error(" Test failed" + result.getName());
+		/*try {
 			myBasic.takeTestScreenshot(result.getName());
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
+		}*/
 		}
 	
 
@@ -51,12 +51,12 @@ public class Listeners implements ITestListener {
 
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
-		try {
+		/*try {
 			myBasic.takeTestScreenshot(result.getName());
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
+		}*/
 	}
 	
 	

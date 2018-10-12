@@ -36,7 +36,7 @@ public class BankRateTest extends MortgageCalculatorTest
 		
 		
 		log.info(driver.getTitle());
-		Assert.assertEquals(driver.getTitle(), "Bankrate.com - Compare mortgage, refinance, insurance, CD rates");
+		Assert.assertEquals(driver.getTitle(), "Free Credit Score & Reporting + Personalized Offers | Bankrate");
 		
 		
 		log.info(driver.getTitle());

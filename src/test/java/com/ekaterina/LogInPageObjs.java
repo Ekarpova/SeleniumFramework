@@ -22,6 +22,8 @@ public class LogInPageObjs
 	
 	
 	 By MyBankRate = By.xpath("//a[@class='global-navigation__secondary-nav-item --is-auth-app']");
+	 
+	                                       
 	 public WebElement clickMyBankRate() {return driver.findElement(MyBankRate);}
 	
 		

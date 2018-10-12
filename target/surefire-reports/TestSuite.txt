@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 20.682 s <<< FAILURE! - in TestSuite
+navigToBankRate(com.ekaterina.BankRateTest)  Time elapsed: 0.017 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.ekaterina.BankRateTest.navigToBankRate(BankRateTest.java:35)
+
+navigatetocalc(com.ekaterina.BankRateTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+
+navigToBankRate(com.ekaterina.HomePageTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+
+enterLogIn(com.ekaterina.HomePageTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.ekaterina.HomePageTest.enterLogIn(HomePageTest.java:58)
+
+navigatetocalc(com.ekaterina.HomePageTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+

@@ -1,4 +1,4 @@
-# Created on 2018-09-29T00:05:42.047
+# Created on 2018-10-05T13:15:51.488
 java.lang.NullPointerException
 	at com.ekaterina.Basic.takeTestScreenshot(Basic.java:89)
 	at com.ekaterina.Listeners.onTestFailure(Listeners.java:19)

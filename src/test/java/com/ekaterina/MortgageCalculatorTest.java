@@ -49,7 +49,7 @@ public class MortgageCalculatorTest extends Basic{
 		String pageTitle = driver.getTitle();
 		log.info(pageTitle);
 		
-		//Assert.assertEquals("Mortgage Calculator", pageTitle);
+		Assert.assertEquals(pageTitle, "Mortgage Calculator");
 		Actions a = new Actions(driver);
 		WebElement move = hpage.dataInput();
 	  
@@ -69,33 +69,15 @@ public class MortgageCalculatorTest extends Basic{
 		log.info("Total Refinancing Benefit", " ", refAmount); 
 		hpage.clickAnalysisLink().click();
 		String Summary = hpage.captureSummary().getText();
-		System.out.println(Summary);	
+		log.info(Summary);	
 		  
 			
 		 FramesFinder.NumberOfFrames(driver, hpage.BankRateLink);} 
 		
 		
 	    
-		/*public void pagenavigation(){
-		
-	    }*/
 		
 		
-		
-		
-		//driver.switchTo().window(parentid);
-	    
-		//System.out.println(currpage);  
-		
-	    
-		
-		//driver.switchTo().frame(driver.findElement(By.id("br1")));
-		//driver.findElement(By.linkText("Bankrate.com")).click();
-		
-		
-		
-		
-		//System.out.println(refAmount);
 	
 	
 

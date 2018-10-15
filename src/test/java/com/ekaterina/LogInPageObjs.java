@@ -18,14 +18,14 @@ public class LogInPageObjs
 	
 	By LogInButton = By.xpath("//a[@class='g-recaptcha button --primary normal-case ']");
 	
-	
+	By HElink = By.xpath("//a[@class='homepage__copy --small --uppercase --semibold']");
 	
 	
 	 By MyBankRate = By.xpath("//a[@class='global-navigation__secondary-nav-item --is-auth-app']");
 	 
 	                                       
 	 public WebElement clickMyBankRate() {return driver.findElement(MyBankRate);}
-	
+	 public WebElement clickOnHomeEquity() {return driver.findElement(HElink);}
 		
 	public WebElement usrIdEnter() {return driver.findElement(Myusername);}
 	

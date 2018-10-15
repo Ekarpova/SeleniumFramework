@@ -52,7 +52,23 @@ public static int NumberOfFrames(WebDriver driver, By locator) {
 	
 	return currentWindow;}
 		
-	
+	public static int brokenLinks(WebDriver driver) {
+		
+		int allLinks = driver.findElements(By.tagName("link")).size();
+		
+		if(allLinks > 0) {
+		for(int k = 0; k < allLinks; k++) {
+			driver.findElement(By.tagName("link")).click();
+			String pTitle = driver.getTitle();
+			if(pTitle.contains("404")) {System.out.println(k + pTitle);}
+			}
+		
+			
+		}
+		else {System.out.println("No links found");} 
+		
+		return allLinks;
+	}
 	
 	
 	

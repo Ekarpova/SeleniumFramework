@@ -6,6 +6,13 @@
   </listeners>
   <test thread-count="5" verbose="0" name="Test(failed)">
     <classes>
+      <class name="com.ekaterina.BankRateTest">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="navigatetocalc"/>
+          <include name="navigToBankRate"/>
+        </methods>
+      </class> <!-- com.ekaterina.BankRateTest -->
       <class name="com.ekaterina.HomePageTest">
         <methods>
           <include name="navigatetocalc"/>
@@ -14,13 +21,12 @@
           <include name="openBrowser"/>
         </methods>
       </class> <!-- com.ekaterina.HomePageTest -->
-      <class name="com.ekaterina.BankRateTest">
+      <class name="com.ekaterina.MortgageCalculatorTest">
         <methods>
-          <include name="openBrowser"/>
           <include name="navigatetocalc"/>
-          <include name="navigToBankRate"/>
+          <include name="openBrowser"/>
         </methods>
-      </class> <!-- com.ekaterina.BankRateTest -->
+      </class> <!-- com.ekaterina.MortgageCalculatorTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

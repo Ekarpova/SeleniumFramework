@@ -46,8 +46,13 @@ public class MortgageCalculatorTest extends Basic{
 		//HomePageObjects HPO = new HomePageObjects(driver);
 		HomePageObjects hpage = PageFactory.initElements(driver, HomePageObjects.class);
 		
+		
+		
 		String pageTitle = driver.getTitle();
 		log.info(pageTitle);
+		
+		
+		
 		
 		Assert.assertEquals(pageTitle, "Mortgage Calculator");
 		Actions a = new Actions(driver);
@@ -64,6 +69,7 @@ public class MortgageCalculatorTest extends Basic{
 		hpage.enterCurLoanTerm("30");
 		hpage.enterMonthsPaid("60");
 		hpage.enterYearsBeforeSell("1");
+		
 		hpage.clickCalcButton();
 		String refAmount = hpage.captureRefAmount().getText();
 		log.info("Total Refinancing Benefit", " ", refAmount); 

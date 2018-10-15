@@ -32,8 +32,8 @@ public class BankRateTest extends MortgageCalculatorTest
 		
 		
 		LogInPageObjs logIn = new LogInPageObjs(driver);
-		FramesFinder.windowsNavigation(driver, logIn.MyBankRate);
-		
+		//FramesFinder.windowsNavigation(driver, logIn.MyBankRate);
+		logIn.clickOnHomeEquity();
 		
 		log.info(driver.getTitle());
 		Assert.assertEquals(driver.getTitle(), "Free Credit Score & Reporting + Personalized Offers | Bankrate");

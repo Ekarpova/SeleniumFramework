@@ -3,14 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ekaterina.HomePageTest">
+      <class name="com.ekaterina.MortgageCalculatorTest">
         <methods>
           <include name="navigatetocalc"/>
-          <include name="navigToBankRate"/>
-          <include name="enterLogIn"/>
           <include name="openBrowser"/>
         </methods>
-      </class> <!-- com.ekaterina.HomePageTest -->
+      </class> <!-- com.ekaterina.MortgageCalculatorTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,4 +1,5 @@
-12:11:59.993 [main] INFO  com.ekaterina.MortgageCalculatorTest - Mortgage Calculator
-12:12:03.191 [main] INFO  com.ekaterina.MortgageCalculatorTest - Home Loan Refinancing Calculator: Current Mortgage Refinance Rates
-12:12:12.853 [main] INFO  com.ekaterina.MortgageCalculatorTest - Total Refinancing Benefit
-12:12:13.258 [main] INFO  com.ekaterina.MortgageCalculatorTest - 
+17:25:59.560 [main] INFO  com.ekaterina.MortgageCalculatorTest - Initialiazation..
+17:25:59.713 [main] INFO  com.ekaterina.MortgageCalculatorTest - Mortgage Calculator
+17:26:01.901 [main] INFO  com.ekaterina.MortgageCalculatorTest - Home Loan Refinancing Calculator: Current Mortgage Refinance Rates
+17:26:10.374 [main] INFO  com.ekaterina.MortgageCalculatorTest - Total Refinancing Benefit
+17:26:10.503 [main] INFO  com.ekaterina.MortgageCalculatorTest - 

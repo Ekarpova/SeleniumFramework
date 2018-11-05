@@ -24,6 +24,7 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -34,14 +35,14 @@ import org.testng.annotations.Test;
 
 
 public class Basic 
-/* this class contains basic methods that are used in framework, like initializing the browser
- taking the screenshot and connecting to DB */
+
 
 {
 	
 	private static Logger log = LogManager.getLogger(Basic.class.getName());
 	
 	public  WebDriver driver;
+	
 	public Properties prop;
 	public String url;
 	public String username;
@@ -51,18 +52,12 @@ public class Basic
 	//public String port;
 	
 
-	public static void main(String[] args)  {}
-		// TODO Auto-generated method stub
-	
-	
 	
 	InputStream inputStream;
 	
 	public WebDriver driverInitialization() throws IOException{
 	
-		//Properties prop = new Properties();
-		//FileInputStream fis = new FileInputStream("C:\\Users\\ekate\\SeleniumFramework\\src\\test\\java\\com\\ekaterina\\DataF.properties");
-		//prop.load(fis);
+		
 		
 		try {
 			Properties prop = new Properties();
@@ -76,19 +71,21 @@ public class Basic
 				throw new FileNotFoundException("property file '" + propFileName + "' not found in the classpath");
 			}
 		
-		
-		
-		
+				
 		
 		String theBrowser = prop.getProperty("browser");
+		
 		if(theBrowser.contains("chrome")) {driver = new ChromeDriver();}
+		
+		
+		
 		else if(theBrowser.contains("firefox")) {driver = new FirefoxDriver();}
 		else {driver = new InternetExplorerDriver();}
 		
 		url = prop.getProperty("url");
 		driver.get(prop.getProperty("url"));
-		//username = prop.getProperty("username");
-		//password = prop.getProperty("password");
+		
+		
 		//host = prop.getProperty("host");
 		//port = prop.getProperty("port");
 		
@@ -109,17 +106,70 @@ public class Basic
 	}
 	
 	
-	/*public void takeTestScreenshot(String result) throws IOException {
-	File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-	FileUtils.copyFile(src, new File("C://Users//ekate//Desktop//Statements//"+ result +"sh.png"));}*/
 	
 	
 	
-public ResultSet dbConnection() throws SQLException  {
+	public String getusername() throws IOException{
 		
+		try {
+			Properties prop = new Properties();
+			String propFileName = "config.properties";
+ 
+			inputStream = getClass().getClassLoader().getResourceAsStream(propFileName);
+ 
+			if (inputStream != null) {
+				prop.load(inputStream);
+			} else {
+				throw new FileNotFoundException("property file '" + propFileName + "' not found in the classpath");}
+			
+			
+			username = prop.getProperty("username");
+		
+			}
+			
+			finally {
+				inputStream.close();}
+			return username ;
+		
+	}
+	
+	
+	
+public String getpassword() throws IOException{
+		
+		try {
+			Properties prop = new Properties();
+			String propFileName = "config.properties";
+ 
+			inputStream = getClass().getClassLoader().getResourceAsStream(propFileName);
+ 
+			if (inputStream != null) {
+				prop.load(inputStream);
+			} else {
+				throw new FileNotFoundException("property file '" + propFileName + "' not found in the classpath");}
+			
+			password = prop.getProperty("password");
+			
+		
+			}
+			
+			finally {
+				inputStream.close();}
+			return username ;
+		
+	}
+	
+	
+	
+		
+	
+	public ResultSet dbConnection() throws SQLException  {
+		
+	
+	
 Connection con;
 
-	con = DriverManager.getConnection("jdbc:mysql://localhost:3306" + "/qadb", "root", "Cenk1986");
+	con = DriverManager.getConnection("jdbc:mysql://localhost:3306" + "/qadb", "root", "mypassword");
 
 log.info("the browser is ");
 log.info("Connected to MySQL");

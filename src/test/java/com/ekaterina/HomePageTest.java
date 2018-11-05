@@ -30,14 +30,14 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.apache.commons.logging.Log;
 import com.ekaterina.*;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
+
+public class HomePageTest extends MortgageCalculatorTest {
 
 
-public class HomePageTest extends BankRateTest 
-/*This calss is a test for sign in into bankrate page, it primarily testing ability to pull data
- from DB and enter it as sign in info. This test depends on successful completion of first test - calculating 
- the refinance and second test successfully navigating to bankrate page */
 
-{
 	private static Logger log = LogManager.getLogger(HomePageTest.class.getName());
 	public String Myusername;
 	public String Mypassword;
@@ -55,25 +55,24 @@ public class HomePageTest extends BankRateTest
 
 	@Test
 	public void enterLogIn() throws IOException, SQLException {
-		navigToBankRate();
+		HomePageObjects logIn = PageFactory.initElements(driver, HomePageObjects.class);
+		navigatetocalc();
 		
-		LogInPageObjs logIn = new LogInPageObjs(driver);
-		FramesFinder.windowsNavigation(driver, logIn.LogInButton);
-		 Basic b = new Basic();
-		 ResultSet results = b.dbConnection();
-		
-		 while(results.next()) {
-			 
-		driver.findElement(logIn.Myusername).sendKeys(results.getString("username"));
-		driver.findElement(logIn.Mypassword).sendKeys(results.getString("password"));
-		 }
+		FramesFinder.windowsNavigation(driver, logIn.MyBankRate);
+		System.out.println(driver.getTitle());
 		
 		
+		logIn.clickMyBankRate();
 		
+		logIn.usrIdEnter(getusername());
 		
+		logIn.passwordEnter(getpassword());
 		
+		Assert.assertEquals("Password or Email Incorrect", logIn.capturedText());
+		log.error(logIn.capturedText());
+		if(logIn.capturedText().isEmpty()) {log.error("test failed");}
+		else {log.info("Test Passed");} 		 
 	
-	//logIn.clickSubmit().click();
 	
 	log.info(driver.getTitle());
 	

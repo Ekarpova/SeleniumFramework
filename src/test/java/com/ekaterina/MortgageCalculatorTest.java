@@ -16,11 +16,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 
-//*****Imports from Paul
+
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -43,8 +44,8 @@ public class MortgageCalculatorTest extends Basic{
 	
 	@Test
 	public void navigatetocalc() {
-		//HomePageObjects HPO = new HomePageObjects(driver);
-		HomePageObjects hpage = PageFactory.initElements(driver, HomePageObjects.class);
+		
+		MortgagePageObjects hpage = PageFactory.initElements(driver, MortgagePageObjects.class);
 		
 		
 		
@@ -78,11 +79,14 @@ public class MortgageCalculatorTest extends Basic{
 		log.info(Summary);	
 		  
 			
-		 FramesFinder.NumberOfFrames(driver, hpage.BankRateLink);} 
+		 FramesFinder.NumberOfFrames(driver, hpage.BankRateLink);
+		 //driver.switchTo().defaultContent();
+		 } 
 		
 		
 	    
-		
+	@AfterTest
+	public void closeBrowser() {driver.close();}
 		
 	
 	

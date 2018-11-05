@@ -1,5 +1,3 @@
-17:25:59.560 [main] INFO  com.ekaterina.MortgageCalculatorTest - Initialiazation..
-17:25:59.713 [main] INFO  com.ekaterina.MortgageCalculatorTest - Mortgage Calculator
-17:26:01.901 [main] INFO  com.ekaterina.MortgageCalculatorTest - Home Loan Refinancing Calculator: Current Mortgage Refinance Rates
-17:26:10.374 [main] INFO  com.ekaterina.MortgageCalculatorTest - Total Refinancing Benefit
-17:26:10.503 [main] INFO  com.ekaterina.MortgageCalculatorTest - 
+21:19:07.313 [main] INFO  com.ekaterina.HomePageTest - Test Passed
+21:19:07.733 [main] INFO  com.ekaterina.HomePageTest - Sign In For Your Free Credit Score & Monitoring | Bankrate
+21:19:07.825 [main] INFO  com.ekaterina.MortgageCalculatorTest - Sign In For Your Free Credit Score & Monitoring | Bankrate

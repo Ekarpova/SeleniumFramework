@@ -4,29 +4,15 @@
   <listeners>
     <listener class-name="com.ekaterina.Listeners"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="Test2(failed)">
     <classes>
-      <class name="com.ekaterina.BankRateTest">
-        <methods>
-          <include name="openBrowser"/>
-          <include name="navigatetocalc"/>
-          <include name="navigToBankRate"/>
-        </methods>
-      </class> <!-- com.ekaterina.BankRateTest -->
-      <class name="com.ekaterina.MortgageCalculatorTest">
-        <methods>
-          <include name="navigatetocalc"/>
-          <include name="openBrowser"/>
-        </methods>
-      </class> <!-- com.ekaterina.MortgageCalculatorTest -->
       <class name="com.ekaterina.HomePageTest">
         <methods>
+          <include name="closeBrowser"/>
           <include name="navigatetocalc"/>
-          <include name="navigToBankRate"/>
-          <include name="enterLogIn"/>
           <include name="openBrowser"/>
         </methods>
       </class> <!-- com.ekaterina.HomePageTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test2(failed) -->
 </suite> <!-- Failed suite [Suite] -->

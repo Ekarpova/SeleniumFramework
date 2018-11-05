@@ -1,0 +1,7 @@
+20:31:25.795 [main] INFO  com.ekaterina.HomePageTest - Initialiazation
+20:31:36.022 [main] ERROR com.ekaterina.FramesFinder - Window is not found
+20:31:36.030 [main] INFO  com.ekaterina.BankRateTest - Mortgage Calculator
+20:31:46.092 [main] ERROR com.ekaterina.FramesFinder - Window is not found
+20:31:46.100 [main] INFO  com.ekaterina.BankRateTest - Mortgage Calculator
+20:31:46.158 [main] INFO  com.ekaterina.MortgageCalculatorTest - Mortgage Calculator
+20:31:49.814 [main] INFO  com.ekaterina.MortgageCalculatorTest - Home Loan Refinancing Calculator: Current Mortgage Refinance Rates

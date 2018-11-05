@@ -1,0 +1,6 @@
+23:54:26.231 [main] INFO  com.ekaterina.Basic - Connected to MySQL
+23:54:26.489 [main] INFO  com.ekaterina.HomePageTest - Sign In For Your Free Credit Score & Monitoring | Bankrate
+23:54:26.502 [main] INFO  com.ekaterina.MortgageCalculatorTest - Sign In For Your Free Credit Score & Monitoring | Bankrate
+23:55:24.231 [main] INFO  com.ekaterina.Basic - chrome 
+23:55:24.235 [main] INFO  com.ekaterina.HomePageTest - Initialiazation
+23:55:24.508 [main] INFO  com.ekaterina.MortgageCalculatorTest - Mortgage Calculator

@@ -9,17 +9,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class FramesFinder
-/*This is supplementary class that contains reusable methods for finding and handling frames on the page 
- as well as working with multiple windows    */
-{
+public class FramesFinder {
+
 	private static Logger log = LogManager.getLogger(FramesFinder.class.getName());
 	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
+	
 	
 public static int NumberOfFrames(WebDriver driver, By locator) {
 	

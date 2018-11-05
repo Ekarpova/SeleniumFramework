@@ -1,0 +1,6 @@
+21:18:33.109 [main] INFO  com.ekaterina.MortgageCalculatorTest - Mortgage Calculator
+21:18:35.377 [main] INFO  com.ekaterina.MortgageCalculatorTest - Home Loan Refinancing Calculator: Current Mortgage Refinance Rates
+21:18:45.179 [main] INFO  com.ekaterina.MortgageCalculatorTest - Total Refinancing Benefit
+21:18:45.310 [main] INFO  com.ekaterina.MortgageCalculatorTest - 
+21:18:55.778 [main] ERROR com.ekaterina.FramesFinder - Window is not found
+21:19:06.927 [main] ERROR com.ekaterina.HomePageTest - Password or Email Incorrect

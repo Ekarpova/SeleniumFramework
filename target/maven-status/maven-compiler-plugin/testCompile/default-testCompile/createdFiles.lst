@@ -1,8 +1,7 @@
-com\ekaterina\BankRateTest.class
 com\ekaterina\Listeners.class
+com\ekaterina\MortgagePageObjects.class
 com\ekaterina\HomePageObjects.class
 com\ekaterina\Basic.class
-com\ekaterina\LogInPageObjs.class
 com\ekaterina\FramesFinder.class
 com\ekaterina\HomePageTest.class
 com\ekaterina\MortgageCalculatorTest.class

@@ -147,29 +147,37 @@
                   <a name="navigatetocalc">
                   </a> <!-- navigatetocalc -->
                   <span class="method-name">navigatetocalc</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Mortgage Calculator] but found [Sign In For Your Free Credit Score &amp; Monitoring | Bankrate]
-	at com.ekaterina.MortgageCalculatorTest.navigatetocalc(MortgageCalculatorTest.java:58)
-... Removed 35 stack frames
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;main-menu&apos;]/nav/ul/li[2]/a&quot;}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.7.0&apos;, revision: &apos;2321c73&apos;, time: &apos;2017-11-02T22:22:35.584Z&apos;
+System info: host: &apos;AU20R6LX1&apos;, ip: &apos;192.168.213.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_141&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\ekate\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 6650f419d3283d08a4ea85a001d0a9e6
+*** Element info: {Using=xpath, value=//div[@class=&apos;main-menu&apos;]/nav/ul/li[2]/a}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.ekaterina.MortgagePageObjects.dataInput(MortgagePageObjects.java:46)
+	at com.ekaterina.MortgageCalculatorTest.navigatetocalc(MortgageCalculatorTest.java:60)
+... Removed 33 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.ekaterina.HomePageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="enterLogIn">
-                  </a> <!-- enterLogIn -->
-                  <span class="method-name">enterLogIn</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -181,6 +189,21 @@
                   <a name="navigatetocalc">
                   </a> <!-- navigatetocalc -->
                   <span class="method-name">navigatetocalc</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ekaterina.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterLogIn">
+                  </a> <!-- enterLogIn -->
+                  <span class="method-name">enterLogIn</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -252,20 +275,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'enterLogIn')
 data.setCell(0, 2, 'com.ekaterina.HomePageTest')
-data.setCell(0, 3, 36735);
+data.setCell(0, 3, 36141);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'navigatetocalc')
 data.setCell(1, 2, 'com.ekaterina.MortgageCalculatorTest')
-data.setCell(1, 3, 12247);
+data.setCell(1, 3, 11156);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'navigatetocalc')
 data.setCell(2, 2, 'com.ekaterina.HomePageTest')
-data.setCell(2, 3, 9);
+data.setCell(2, 3, 10057);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 48 seconds</span>
+              <span class="suite-total-time">Total running time: 57 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -298,33 +321,25 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">navigatetocalc</span>
-                <span class="method-start">6140 ms</span>
+                <span class="method-start">5963 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">18389 ms</span>
-              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ekaterina.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">openBrowser</span>
-                <span class="method-start">18433 ms</span>
+                <span class="method-start">17135 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">enterLogIn</span>
-                <span class="method-start">23918 ms</span>
+                <span class="method-start">21710 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">navigatetocalc</span>
-                <span class="method-start">60654 ms</span>
+                <span class="method-start">57851 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">60669 ms</span>
-              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

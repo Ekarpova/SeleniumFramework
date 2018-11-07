@@ -1,3 +1,5 @@
-21:19:07.313 [main] INFO  com.ekaterina.HomePageTest - Test Passed
-21:19:07.733 [main] INFO  com.ekaterina.HomePageTest - Sign In For Your Free Credit Score & Monitoring | Bankrate
-21:19:07.825 [main] INFO  com.ekaterina.MortgageCalculatorTest - Sign In For Your Free Credit Score & Monitoring | Bankrate
+21:01:04.073 [main] ERROR com.ekaterina.FramesFinder - Window is not found
+21:01:16.749 [main] ERROR com.ekaterina.HomePageTest - Password or Email Incorrect
+21:01:18.164 [main] INFO  com.ekaterina.HomePageTest - Test Passed
+21:01:18.288 [main] INFO  com.ekaterina.HomePageTest - Sign In For Your Free Credit Score & Monitoring | Bankrate
+21:01:18.300 [main] INFO  com.ekaterina.MortgageCalculatorTest - Sign In For Your Free Credit Score & Monitoring | Bankrate

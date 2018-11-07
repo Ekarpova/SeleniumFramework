@@ -2,49 +2,76 @@
 <testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="60781" started-at="2018-11-05T02:15:00Z" finished-at="2018-11-05T02:16:01Z">
+  <suite name="Suite" duration-ms="67920" started-at="2018-11-07T02:00:20Z" finished-at="2018-11-07T02:01:28Z">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="18408" started-at="2018-11-05T02:15:00Z" finished-at="2018-11-05T02:15:18Z">
+    <test name="Test1" duration-ms="17119" started-at="2018-11-07T02:00:20Z" finished-at="2018-11-07T02:00:37Z">
       <class name="com.ekaterina.MortgageCalculatorTest">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.ekaterina.MortgageCalculatorTest@130161f7]" name="openBrowser" is-config="true" duration-ms="6121" started-at="2018-11-05T02:15:00Z" finished-at="2018-11-05T02:15:06Z">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.ekaterina.MortgageCalculatorTest@c33b74f]" name="openBrowser" is-config="true" duration-ms="5931" started-at="2018-11-07T02:00:20Z" finished-at="2018-11-07T02:00:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="navigatetocalc()[pri:0, instance:com.ekaterina.MortgageCalculatorTest@130161f7]" name="navigatetocalc" duration-ms="12247" started-at="2018-11-05T02:15:06Z" finished-at="2018-11-05T02:15:18Z">
+        <test-method status="PASS" signature="navigatetocalc()[pri:0, instance:com.ekaterina.MortgageCalculatorTest@c33b74f]" name="navigatetocalc" duration-ms="11156" started-at="2018-11-07T02:00:26Z" finished-at="2018-11-07T02:00:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigatetocalc -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.ekaterina.MortgageCalculatorTest@130161f7]" name="closeBrowser" is-config="true" duration-ms="18" started-at="2018-11-05T02:15:18Z" finished-at="2018-11-05T02:15:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
       </class> <!-- com.ekaterina.MortgageCalculatorTest -->
     </test> <!-- Test1 -->
-    <test name="Test2" duration-ms="42347" started-at="2018-11-05T02:15:18Z" finished-at="2018-11-05T02:16:01Z">
+    <test name="Test2" duration-ms="50785" started-at="2018-11-07T02:00:37Z" finished-at="2018-11-07T02:01:28Z">
       <class name="com.ekaterina.HomePageTest">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.ekaterina.HomePageTest@6e171cd7]" name="openBrowser" is-config="true" duration-ms="5484" started-at="2018-11-05T02:15:18Z" finished-at="2018-11-05T02:15:24Z">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.ekaterina.HomePageTest@498d318c]" name="openBrowser" is-config="true" duration-ms="4575" started-at="2018-11-07T02:00:37Z" finished-at="2018-11-07T02:00:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="enterLogIn()[pri:0, instance:com.ekaterina.HomePageTest@6e171cd7]" name="enterLogIn" duration-ms="36735" started-at="2018-11-05T02:15:24Z" finished-at="2018-11-05T02:16:01Z">
+        <test-method status="PASS" signature="enterLogIn()[pri:0, instance:com.ekaterina.HomePageTest@498d318c]" name="enterLogIn" duration-ms="36141" started-at="2018-11-07T02:00:42Z" finished-at="2018-11-07T02:01:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterLogIn -->
-        <test-method status="FAIL" signature="navigatetocalc()[pri:0, instance:com.ekaterina.HomePageTest@6e171cd7]" name="navigatetocalc" duration-ms="9" started-at="2018-11-05T02:16:01Z" finished-at="2018-11-05T02:16:01Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="FAIL" signature="navigatetocalc()[pri:0, instance:com.ekaterina.HomePageTest@498d318c]" name="navigatetocalc" duration-ms="10057" started-at="2018-11-07T02:01:18Z" finished-at="2018-11-07T02:01:28Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[expected [Mortgage Calculator] but found [Sign In For Your Free Credit Score & Monitoring | Bankrate]]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='main-menu']/nav/ul/li[2]/a"}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'AU20R6LX1', ip: '192.168.213.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_141'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\ekate\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 6650f419d3283d08a4ea85a001d0a9e6
+*** Element info: {Using=xpath, value=//div[@class='main-menu']/nav/ul/li[2]/a}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Mortgage Calculator] but found [Sign In For Your Free Credit Score & Monitoring | Bankrate]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at org.testng.Assert.assertEquals(Assert.java:463)
-at com.ekaterina.MortgageCalculatorTest.navigatetocalc(MortgageCalculatorTest.java:58)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='main-menu']/nav/ul/li[2]/a"}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'AU20R6LX1', ip: '192.168.213.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_141'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\ekate\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 6650f419d3283d08a4ea85a001d0a9e6
+*** Element info: {Using=xpath, value=//div[@class='main-menu']/nav/ul/li[2]/a}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at com.ekaterina.MortgagePageObjects.dataInput(MortgagePageObjects.java:46)
+at com.ekaterina.MortgageCalculatorTest.navigatetocalc(MortgageCalculatorTest.java:60)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -76,14 +103,10 @@ at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigatetocalc -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.ekaterina.HomePageTest@6e171cd7]" name="closeBrowser" is-config="true" duration-ms="111" started-at="2018-11-05T02:16:01Z" finished-at="2018-11-05T02:16:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
       </class> <!-- com.ekaterina.HomePageTest -->
     </test> <!-- Test2 -->
   </suite> <!-- Suite -->

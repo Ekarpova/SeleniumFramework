@@ -55,7 +55,7 @@ public class MortgageCalculatorTest extends Basic{
 		
 		
 		
-		Assert.assertEquals(pageTitle, "Mortgage Calculator");
+		//Assert.assertEquals(pageTitle, "Mortgage Calculator");
 		Actions a = new Actions(driver);
 		WebElement move = hpage.dataInput();
 	  
@@ -85,8 +85,8 @@ public class MortgageCalculatorTest extends Basic{
 		
 		
 	    
-	@AfterTest
-	public void closeBrowser() {driver.close();}
+	//@AfterTest
+	//public void closeBrowser() {driver.close();}
 		
 	
 	

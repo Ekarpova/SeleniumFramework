@@ -1,0 +1,6 @@
+21:00:42.143 [main] INFO  com.ekaterina.Basic - chrome 
+21:00:42.147 [main] INFO  com.ekaterina.HomePageTest - Initialiazation
+21:00:42.155 [main] INFO  com.ekaterina.MortgageCalculatorTest - Mortgage Calculator
+21:00:44.698 [main] INFO  com.ekaterina.MortgageCalculatorTest - Home Loan Refinancing Calculator: Current Mortgage Refinance Rates
+21:00:53.504 [main] INFO  com.ekaterina.MortgageCalculatorTest - Total Refinancing Benefit
+21:00:53.668 [main] INFO  com.ekaterina.MortgageCalculatorTest - 

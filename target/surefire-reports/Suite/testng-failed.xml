@@ -8,7 +8,6 @@
     <classes>
       <class name="com.ekaterina.HomePageTest">
         <methods>
-          <include name="closeBrowser"/>
           <include name="navigatetocalc"/>
           <include name="openBrowser"/>
         </methods>
